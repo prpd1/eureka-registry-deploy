@@ -19,7 +19,7 @@
       node (label) {
 
           stage ('Checkout SCM'){
-            git credentialsId: 'git', url: '', branch:  "${env}"
+            git credentialsId: 'git', url: 'https://github.com/prpd1/eureka-registry-deploy.git', branch:  "${env}"
           }
 
           stage ('Helm Chart') {
